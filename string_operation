@@ -1,0 +1,95 @@
+# Define the string
+sample_string = "Hello everyone! Welcome to Python programming."
+
+# Original string
+print("Original string:", sample_string)
+
+# Convert to uppercase
+print("Uppercased:", sample_string.upper())
+
+# Convert to lowercase
+print("Lowercased:", sample_string.lower())
+
+# Swap case
+print("Swapped case:", sample_string.swapcase())
+
+# Capitalize (only first character uppercase)
+print("Capitalized:", sample_string.capitalize())
+
+# Title case (each word capitalized)
+print("Title cased:", sample_string.title())
+
+# Find the position of a substring
+print("Position of 'Python':", sample_string.find("Python"))
+
+# Check if a substring is in the string
+print("Contains 'Welcome':", "Welcome" in sample_string)
+
+# Replace a substring with another
+print("Replaced string:", sample_string.replace("Python", "Java"))
+
+# Count occurrences of a substring
+print("Occurrences of 'e':", sample_string.count('e'))
+
+# Split the string into words
+words = sample_string.split(" ")
+print("Words in string:", words)
+
+# Join words into a single string
+joined_words = " | ".join(words)
+print("Joined words:", joined_words)
+
+# Check if the string starts with a specific substring
+print("Starts with 'Hello':", sample_string.startswith("Hello"))
+
+# Check if the string ends with a specific substring
+print("Ends with '!':", sample_string.endswith("!"))
+
+# Reverse the string
+print("Reversed string:", sample_string[::-1])
+
+# Remove leading and trailing whitespaces
+sample_with_spaces = "   " + sample_string + "   "
+print("Trimmed string:", sample_with_spaces.strip())
+
+# Check if all characters are alphabetic
+print("Is alphabetic:", sample_string.isalpha())
+
+# Check if all characters are numeric
+print("Is numeric:", sample_string.isnumeric())
+
+# Check if all characters are alphanumeric
+print("Is alphanumeric:", sample_string.isalnum())
+
+# Check if all characters are lowercase
+print("Is lowercase:", sample_string.islower())
+
+# Check if all characters are uppercase
+print("Is uppercase:", sample_string.isupper())
+
+# Split the string into lines
+multi_line_string = "Line1\nLine2\nLine3"
+print("Lines in string:", multi_line_string.splitlines())
+
+# Center align the string
+print("Centered string:", sample_string.center(50, '*'))
+
+# Left align the string
+print("Left aligned:", sample_string.ljust(50, '-'))
+
+# Right align the string
+print("Right aligned:", sample_string.rjust(50, '-'))
+
+# Encode the string into bytes
+encoded_string = sample_string.encode('utf-8')
+print("Encoded string:", encoded_string)
+
+# Decode the bytes back into a string
+decoded_string = encoded_string.decode('utf-8')
+print("Decoded string:", decoded_string)
+
+# Check if string is printable
+print("Is printable:", sample_string.isprintable())
+
+# Check if string contains only spaces
+print("Contains only spaces:", "   ".isspace())
